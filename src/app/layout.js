@@ -25,10 +25,10 @@ export default function RootLayout({ children }) {
           <nav className="flex justify-between p-4  fixed w-full z-10">
             <div className="font-bold text-2xl ml-[5%]">AWIRUT</div>
             <ul className="flex space-x-6 mr-[3%]"> 
-              <Link href='#'>ABOUT</Link>
+              <Link href='#about'>ABOUT</Link>
               <Link href='#skill' scroll={true}>SKILL</Link>
               <Link href='#project' scroll={true}>PROJECT</Link>
-              <Link href='#'>CONTECT</Link>
+              <Link href='#contect'>CONTECT</Link>
 
             </ul>
           </nav>
