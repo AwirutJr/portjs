@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  scroll-behavior: smooth important;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.imgbg {
+  background: linear-gradient(rgba(0,0,0,0.5), #17153B 110%), url("https://wallpaperaccess.com/full/156588.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.imgbg1 {
+  background: linear-gradient(90deg, rgba(0,0,0,0.5), #0e0c28 60%), url("https://wallpapers.com/images/hd/1920x1080-hd-coding-ahcwb3r6y58rgebc.jpg") no-repeat center center;
+  background-size: cover;
+}
+.blurBg {
+  background: rgba(59, 45, 78, 0.3);
+  backdrop-filter: blur(0.5px);
+}
+
+.blurBg1 {
+  background: rgba(116, 116, 116, 0.3);
+  /* backdrop-filter: blur(50px); */
+}
+
+.colorBg {
+  background: #17153B;
+  /* url("https://wallpaperaccess.com/full/156588.jpg") */
+}
