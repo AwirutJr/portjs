@@ -2,26 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body {
-  scroll-behavior: smooth important;
+html {
+  scroll-behavior: smooth !important;
 }
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  color: white;
+  background: #000;
   font-family: Arial, Helvetica, sans-serif;
+
 }
 
 .imgbg {
@@ -40,10 +30,14 @@ body {
 
 .blurBg1 {
   background: rgba(116, 116, 116, 0.3);
-  /* backdrop-filter: blur(50px); */
+  backdrop-filter: blur(50px);
 }
 
 .colorBg {
   background: #17153B;
-  /* url("https://wallpaperaccess.com/full/156588.jpg") */
+}
+
+.iii {
+  background: linear-gradient(90deg, rgba(0,0,0,0.5), rgba(0,0,0,0.9) 0%), url("https://png.pngtree.com/thumb_back/fh260/background/20230622/pngtree-starry-night-landscape-3d-wallpaper-of-dark-mountains-trees-and-moon-image_3655812.jpg") no-repeat center center;
+  background-size: cover;
 }
