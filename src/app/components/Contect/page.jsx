@@ -18,15 +18,15 @@ const page = () => {
           </div>
           <div className=' w-[300px] flex flex-col items-center gap-1.5'>
           <h1 className="font-bold mb-3">Important Links</h1>
-            <Link href='#'>Home</Link>
-            <Link href='#'>About Me</Link>
-            <Link href='#'>Skill</Link>
-            <Link href='#'>Project</Link>
-            <Link href='#'>Contect</Link>
+            <Link href='#home'>Home</Link>
+            <Link href='#about'>About Me</Link>
+            <Link href='#skill'>Skill</Link>
+            <Link href='#project'>Project</Link>
+            <Link href='#contect'>Contect</Link>
           </div>
           <div className="w-[300px] flex flex-col items-center">
             <h1 className="font-bold mb-3">Social Media Links</h1>
-            <ul className='flex gap-2'>
+            <ul className='flex gap-4'>
               <Link href='#'><FaFacebook className='w-8 h-8'/></Link>
               <Link href='#'><MdEmail className='w-8 h-8'/></Link>
               <Link href='#'><FaGithub className='w-8 h-8'/></Link>
