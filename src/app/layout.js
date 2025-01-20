@@ -32,26 +32,39 @@ export default function RootLayout({ children }) {
            className="font-bold text-2xl ml-[5%]">AWIRUT</motion.div>
 
           {/* ใช้ motion กับ ul สำหรับการแอนิเมชั่น */}
-          <motion.ul
-            initial={{ x: -100, opacity: 0 }}   // เริ่มต้นที่ซ้ายสุด
-            animate={{ x: 0, opacity: 1 }}      // เลื่อนมาที่ตำแหน่งปกติ
-            transition={{ duration: 1 }}         // ระยะเวลาในการแอนิเมชั่น
+          <ul 
             className="flex space-x-6 mr-[3%]"
           >
             {/* ใช้ Link ของ Next.js ปกติ */}
-            <li>
+            <motion.li
+            initial={{ x: -100, opacity: 0 }}   // เริ่มต้นที่ซ้ายสุด
+            animate={{ x: 0, opacity: 1 }}      // เลื่อนมาที่ตำแหน่งปกติ
+            transition={{ duration: 0.1 ,delay: 0.6}}         // ระยะเวลาในการแอนิเมชั่น
+            >
               <Link href='#about'>ABOUT</Link>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li
+            initial={{ x: -100, opacity: 0 }}   // เริ่มต้นที่ซ้ายสุด
+            animate={{ x: 0, opacity: 1 }}      // เลื่อนมาที่ตำแหน่งปกติ
+            transition={{ duration: 0.1,delay: 0.4 }}         // ระยะเวลาในการแอนิเมชั่น
+            >
               <Link href='#skill' scroll={true}>SKILL</Link>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li
+            initial={{ x: -100, opacity: 0 }}   // เริ่มต้นที่ซ้ายสุด
+            animate={{ x: 0, opacity: 1 }}      // เลื่อนมาที่ตำแหน่งปกติ
+            transition={{ duration: 0.1 ,delay: 0.2}}         // ระยะเวลาในการแอนิเมชั่น
+            >
               <Link href='#project' scroll={true}>PROJECT</Link>
-            </li>
-            <li>
+              </motion.li>
+              <motion.li
+            initial={{ x: -100, opacity: 0 }}   // เริ่มต้นที่ซ้ายสุด
+            animate={{ x: 0, opacity: 1 }}      // เลื่อนมาที่ตำแหน่งปกติ
+            transition={{ duration: 0.1 }}         // ระยะเวลาในการแอนิเมชั่น
+            >
               <Link href='#contact'>CONTACT</Link>
-            </li>
-          </motion.ul>
+            </motion.li>
+          </ul>
         </nav>
 
         {/* ส่วนที่เหลือของเนื้อหา */}
