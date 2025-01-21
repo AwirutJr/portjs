@@ -5,7 +5,7 @@ const page = () => {
   return (
     <div>
       <div
-        className="flex flex-col justify-center w-full h-[730px] items-center space-y-3 imgbg">
+        className="flex flex-col justify-center w-full h-[738.40px] items-center space-y-3 imgbg">
         <div>
           <motion.img
             initial={{ x: -100, opacity: 0 }}   // เริ่มต้นที่ซ้ายสุด

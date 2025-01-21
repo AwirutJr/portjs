@@ -5,6 +5,7 @@ import About from './components/About/page'
 import Skill from './components/Skill/page'
 import Project from './components/Project/page'
 import Contect from './components/Contect/page'
+
 import { motion, useInView } from 'framer-motion'
 import { useEffect, useRef } from 'react'
 
