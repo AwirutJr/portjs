@@ -2,6 +2,7 @@
 
 import React, { useEffect, useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
+import Link from 'next/link';
 
 const About = () => {
   const ref = useRef(null);
@@ -37,7 +38,7 @@ const About = () => {
             Seeing a character create and control robots with code sparked my interest. I've been writing code ever since and 
             am deeply passionate about being a developer, as it allows me to create and innovate.
           </p>
-          <button className="bg-[#C8ACD6] px-4 rounded-md">RESUME</button>
+          <Link href='https://www.canva.com/design/DAGYHEsdQJ4/8Z-QV2ML6w2TNkRPW537BA/edit?utm_content=DAGYHEsdQJ4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton' className="bg-[#C8ACD6] px-4 rounded-md">RESUME</Link>
         </div>
       </motion.div>
     </div>
