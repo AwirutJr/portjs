@@ -21,14 +21,9 @@ export default function RootLayout({ children }) {
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <nav className="flex justify-between p-4 fixed w-full z-10">
           <motion.div
-          initial={{ opacity: 0, scale: 0.5, zIndex: -1 }}  // เริ่มต้นด้วยขนาดเล็กและอยู่ด้านหลัง
-          animate={{ opacity: 1, scale: 1, zIndex: 10 }}     // เด้งออกมาขนาดปกติและออกมาจากด้านหลัง
-          transition={{ 
-            type: "spring",                        // ใช้ spring สำหรับเด้ง
-            stiffness: 500,                        // ความตึงของสปริง
-            damping: 50,                           // ความนุ่มนวลในการเคลื่อนไหว
-            duration: 2                          // ระยะเวลาในการแอนิเมชั่น
-          }}
+            initial={{ x: -100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.1 }}  
            className="font-bold text-2xl ml-[5%]">AWIRUT</motion.div>
 
           {/* ใช้ motion กับ ul สำหรับการแอนิเมชั่น */}

@@ -21,18 +21,7 @@ export default function Home() {
   return (
     <div>
       <Header />
-      
-      {/* เพิ่ม ref ให้กับ motion.div เพื่อให้ใช้ useInView */}
-      <motion.div
-        ref={ref} // เชื่อมโยง ref
-        initial={{ opacity: 0, y: -100 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-        viewport={{ amount:"all" }} // ให้แอนิเมชันเกิดขึ้นครั้งเดียว
-      >
-        <About />
-      </motion.div>
-
+      <About />
       <Skill />
       <Project />
       <Contect />
