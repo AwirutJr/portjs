@@ -10,7 +10,7 @@ const page = () => {
           <motion.img
             initial={{ x: -100, opacity: 0 }}   // เริ่มต้นที่ซ้ายสุด
             animate={{ x: 0, opacity: 1 }}      // เลื่อนมาที่ตำแหน่งปกติ
-            transition={{ duration: 0.1 }}         // ระยะเวลาในการแอนิเมชั่น
+            transition={{ duration: 0.1,delay:0.1, ease: "easeOut"}}         // ระยะเวลาในการแอนิเมชั่น
 
 
             src="https://images.unsplash.com/photo-1735306005581-e09d7dda15b1?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -21,12 +21,12 @@ const page = () => {
         <motion.h1
           initial={{ x: -100, opacity: 0 }}   // เริ่มต้นที่ซ้ายสุด
           animate={{ x: 0, opacity: 1 }}      // เลื่อนมาที่ตำแหน่งปกติ
-          transition={{ duration: 0.1,delay: }}         // ระยะเวลาในการแอนิเมชั่น
+          transition={{ duration: 0.1,delay:0.4}}         // ระยะเวลาในการแอนิเมชั่น
           className="text-5xl">Awirut Jiensakul</motion.h1>
         <motion.p
-          initial={{ x: -100, opacity: 0 }}   // เริ่มต้นที่ซ้ายสุด
+          initial={{ x: 100, opacity: 0 }}   // เริ่มต้นที่ซ้ายสุด
           animate={{ x: 0, opacity: 1 }}      // เลื่อนมาที่ตำแหน่งปกติ
-          transition={{ duration: 0.1 }}         // ระยะเวลาในการแอนิเมชั่น
+          transition={{ duration: 0.1,delay:0.8 }}         // ระยะเวลาในการแอนิเมชั่น
           className="text-xl">Back-end Developer</motion.p>
       </div>
     </div>
