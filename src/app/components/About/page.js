@@ -15,11 +15,11 @@ const about = () => {
   return (
       <div id='about' className="flex justify-center items-center h-[600px] colorBg">
         <motion.div
-            ref={ref} // เชื่อมโยง ref
-            initial={{ opacity: 0, y: -100 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            ref={ref}
+            initial={{ opacity: 0, x: -200 }}
+            whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
-            viewport={{ amount:"all" }}
+            viewport={{ amount: "all" }}
             className='flex justify-center items-center gap-3 h-auto w-auto'
             >
           <div>
