@@ -57,7 +57,7 @@ export default function RootLayout({ children }) {
             animate={{ x: 0, opacity: 1 }}      // เลื่อนมาที่ตำแหน่งปกติ
             transition={{ duration: 0.1 }}         // ระยะเวลาในการแอนิเมชั่น
             >
-              <Link href='#contact'>CONTACT</Link>
+              <Link href='#contect'>CONTACT</Link>
             </motion.li>
           </ul>
         </nav>
