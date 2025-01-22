@@ -43,6 +43,7 @@ export default function RootLayout({ children }) {
             initial={{ x: -100, opacity: 0 }}   // เริ่มต้นที่ซ้ายสุด
             animate={{ x: 0, opacity: 1 }}      // เลื่อนมาที่ตำแหน่งปกติ
             transition={{ duration: 0.1,delay: 0.4 }}         // ระยะเวลาในการแอนิเมชั่น
+            className="hover"
             >
               <Link href='#skill' scroll={true}>SKILL</Link>
             </motion.li>
@@ -50,6 +51,7 @@ export default function RootLayout({ children }) {
             initial={{ x: -100, opacity: 0 }}   // เริ่มต้นที่ซ้ายสุด
             animate={{ x: 0, opacity: 1 }}      // เลื่อนมาที่ตำแหน่งปกติ
             transition={{ duration: 0.1 ,delay: 0.2}}         // ระยะเวลาในการแอนิเมชั่น
+            className="hover"
             >
               <Link href='#project' scroll={true}>PROJECT</Link>
               </motion.li>
@@ -57,6 +59,7 @@ export default function RootLayout({ children }) {
             initial={{ x: -100, opacity: 0 }}   // เริ่มต้นที่ซ้ายสุด
             animate={{ x: 0, opacity: 1 }}      // เลื่อนมาที่ตำแหน่งปกติ
             transition={{ duration: 0.1 }}         // ระยะเวลาในการแอนิเมชั่น
+            className="hover"
             >
               <Link href='#contect'>CONTACT</Link>
             </motion.li>
