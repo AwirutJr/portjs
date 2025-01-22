@@ -41,3 +41,27 @@ body {
   background: linear-gradient(90deg, rgba(0,0,0,0.5), rgba(0,0,0,0.9) 0%), url("https://png.pngtree.com/thumb_back/fh260/background/20230622/pngtree-starry-night-landscape-3d-wallpaper-of-dark-mountains-trees-and-moon-image_3655812.jpg") no-repeat center center;
   background-size: cover;
 }
+
+.hover {
+  position: relative;
+  display: inline-block;
+}
+
+.hover::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fbbf24;
+  transition: width 0.3s ease;
+}
+
+.hover:hover::after {
+  width: 45%;
+}
+
+.hover:hover {
+  color: #fbbf24;
+}

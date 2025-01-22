@@ -35,6 +35,7 @@ export default function RootLayout({ children }) {
             initial={{ x: -100, opacity: 0 }}   // เริ่มต้นที่ซ้ายสุด
             animate={{ x: 0, opacity: 1 }}      // เลื่อนมาที่ตำแหน่งปกติ
             transition={{ duration: 0.1 ,delay: 0.6}}         // ระยะเวลาในการแอนิเมชั่น
+            className="hover"
             >
               <Link href='#about'>ABOUT</Link>
             </motion.li>

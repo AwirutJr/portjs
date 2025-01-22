@@ -15,7 +15,7 @@ const page = () => {
       <div className=' w-full h-[300px] flex justify-center  items-start gap-8 py-16'>
           <div className=" w-[300px]">
             <h1 className="font-bold mb-3">Contact Information</h1>
-            <p>+6695-807-2692</p>
+            <p>+66 95-807-2692</p>
             <p>91/835 Nuanjan 56 Alley, Section 1, Nuanjan Subdistrict, Bueng Kum District, Bangkok 10230, Thailand</p>
           </div>
           <div className=' w-[300px] flex flex-col items-center gap-1.5'>

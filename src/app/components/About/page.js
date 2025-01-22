@@ -15,7 +15,7 @@ const About = () => {
   }, [isInView]);
 
   return (
-    <div id="about" className="flex justify-center items-center h-[600px] colorBg">
+    <div id="about" className="flex justify-center i  tems-center h-[600px] colorBg">
       <motion.div
         ref={ref}
         initial={{ x: -200, opacity: 0 }}
