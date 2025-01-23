@@ -50,7 +50,7 @@ body {
 .hover::after {
   content: '';
   position: absolute;
-  bottom: 0;
+  bottom: 6px;
   left: 0;
   width: 0;
   height: 2px;
@@ -60,8 +60,22 @@ body {
 
 .hover:hover::after {
   width: 45%;
-}
+} 
 
 .hover:hover {
   color: #fbbf24;
+}
+
+.test::after {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.test a {
+  text-decoration: none;
+}
+
+.active a {
+  color: #fbbf24; 
 }
